@@ -1,0 +1,38 @@
+/* 
+.main-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.main-card:hover {
+  transform: scale(1.05);
+}
+.maincontainer{
+
+    background: linear-gradient(to right, #1E90FF, #87CEEB); 
+  
+}
+.main-card-title {
+  color: #333;
+  font-size: 1.5em;
+}
+
+.main-card-text {
+  color: #777;
+  font-size: 1em;
+}
+
+.main-card-link {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.main-card-link:hover {
+  background-color: #0056b3;
+} */

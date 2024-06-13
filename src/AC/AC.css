@@ -1,0 +1,26 @@
+.text-center {
+    text-align: center;
+  }
+  
+  .student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .student-table th,
+  .student-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .student-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .student-table tbody tr:nth-of-type(even) {
+    background-color: #f9f9f9;
+  }
+  
