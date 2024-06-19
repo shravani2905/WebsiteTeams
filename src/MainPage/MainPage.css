@@ -53,6 +53,7 @@ article {
   touch-action: none;
   margin-bottom: 20px;
   margin-top: 20px;
+  text-align: center;
 }
 
 main {
@@ -159,7 +160,8 @@ article button {
   color: hsl(108, 84%, 48%);
 }
 .knowmore{
-  color: green;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 button[data-glow] span {
   font-weight: bold;
@@ -172,5 +174,9 @@ button[data-glow] span {
   background-attachment: fixed;
   background-clip: text;
   filter: brightness(1.5);
-  color: transparent;
+  text-decoration: none;
+}
+
+Link{
+  text-decoration: none;
 }

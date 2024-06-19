@@ -112,32 +112,52 @@ const students = [
 ,
 
 
+
+
+{ id: 1, name: 'Goutam Sai Pathuri', rollNo: '16071A05A6', year: '2018-2019', position: 'Vice Chair' },
+{ id: 2, name: 'Sri Vatsa Saketh Kunchakarra', rollNo: '16071A0589', year: '2018-2019', position: 'Joint Secretary' },
+{ id: 3, name: 'Vinuthnanetha Anagandula', rollNo: '16071A0503', year: '2018-2019', position: 'Joint Treasurer' },
+{ id: 4, name: 'Rahul Manne', rollNo: '16071A0537', year: '2018-2019', position: 'Vice President' },
+{ id: 5, name: 'Jaya Prakash Lavdyavath', rollNo: '16071A0591', year: '2018-2019', position: 'Deputy Director' },
+{ id: 6, name: 'Abhignya Pachava', rollNo: '16071A0543', year: '2018-2019', position: 'Technical Head' },
+{ id: 7, name: 'Naga Prudhvi Kumar Bobba', rollNo: '16071A0598', year: '2018-2019', position: 'Non-Technical Head' },
+{ id: 8, name: 'Sahithi Mekala', rollNo: '16071A0595', year: '2018-2019', position: 'Event Organiser' },
+{ id: 9, name: 'Poojitha Guntapalli', rollNo: '16071A0581', year: '2018-2019', position: 'Event Organiser' },
+{ id: 10, name: 'Vaishnavi Yadlapati', rollNo: '16071A05C0', year: '2018-2019', position: 'Excom Head' },
+{ id: 11, name: 'Supraja Vadlamudi', rollNo: '16071A05B7', year: '2018-2019', position: 'External Event Organiser' },
+{ id: 12, name: 'Vathsalya Pakalapati', rollNo: '16071A05A2', year: '2018-2019', position: 'External Event Organiser' },
+{ id: 13, name: 'Prathyusha Reddy Sama', rollNo: '16071A05M0', year: '2018-2019', position: 'Joint Event Coordinator' },
+{ id: 14, name: 'Sai Keerthan Palavarapu', rollNo: '16071A05A3', year: '2018-2019', position: 'Event Coverage Coordinator' },
+{ id: 15, name: 'Lokesh Bathula', rollNo: '16071A0506', year: '2018-2019', position: 'Event Coverage Coordinator' }
 ];
+
+
 const AC = () => {
   const { year } = useParams();
   const filteredStudents = students.filter(student => student.year === year);
-
   return (
-    <div>
+    <div className="container">
       <h2 className="text-center">Action Committee {year}</h2>
-      <table className="student-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Position</th>
-            <th>Roll No</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredStudents.map(student => (
-            <tr key={student.id}>
-              <td>{student.name}</td>
-              <td>{student.position}</td>
-              <td>{student.rollNo}</td>
+      <div className="table-container">
+        <table className="student-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Roll No</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {filteredStudents.map(student => (
+              <tr key={student.id}>
+                <td>{student.name}</td>
+                <td>{student.position}</td>
+                <td>{student.rollNo}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

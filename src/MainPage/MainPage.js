@@ -40,7 +40,7 @@ const App = () => {
         <p className="main-card-text">Meet our experienced faculty coordinators.</p>
         <button data-glow>
         <Link to="/faculty" >
-        <span >Know more</span>
+        <span className='knowmore'>Know more</span>
         </Link>
         </button>
       </article>

@@ -7,10 +7,9 @@ import Faculty from './Faculty/Faculty';
 import Committee from "./Committee/Committee";
 import AC from './AC/AC';
 import MC from "./MC/MC";
-import ActionCommittee from "./ActionCommittee/ActionCommittee";
-import ManagingCommittee from "./ManagingCommittee/ManagingCommittee";
-
-const routes = [
+import ActionCommittee from "./ActionCommittee/ActionCommittee"
+import ManagingCommittee from "./ManagingCommittee/ManagingCommittee"
+const browserRouter = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
@@ -22,18 +21,16 @@ const routes = [
       {
         path: 'committee',
         element: <Committee />,
-        children: [
-          {
-            path: ':year/action',
-            element: <AC />,
-          },
-          {
-            path: ':year/managing',
-            element: <MC />,
-          },
-        ]
       },
     ],
+  },
+  {
+    path: '/committee/action/:year',
+    element: <AC />,
+  },
+  {
+    path: '/committee/managing/:year',
+    element: <MC />,
   },
   {
     path: '/committee/actioncommittee/:year',
@@ -43,9 +40,8 @@ const routes = [
     path: '/committee/managingcommittee/:year',
     element: <ManagingCommittee />,
   },
-];
-
-const browserRouter = createBrowserRouter(routes);
+ 
+]);
 
 function App() {
   return (

@@ -15,10 +15,11 @@
   .faculty-card {
     background-color: #f9f9f9;
     border-radius: 8px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
     overflow: hidden;
-    max-width: 350px; /* Limiting maximum width */
+    max-width: 500px; /* Limiting maximum width */
   }
   
   .faculty-card:hover {
